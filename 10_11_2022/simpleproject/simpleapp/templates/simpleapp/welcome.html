@@ -14,5 +14,11 @@
         <li>{{ obj.name }}</li>
         {% endfor %}
     </ul>
+    <form action="{% url 'simpleapp:showparams' %}"  method="post">
+        {% csrf_token %}
+        <p>Name<input type="text" name="email" ></p>
+        <p><input type="text" name="organization" ></p>
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>
