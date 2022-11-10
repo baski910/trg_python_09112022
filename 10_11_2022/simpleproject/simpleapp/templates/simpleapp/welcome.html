@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Welcome to Django - First Template</h1>
+    <p><h2>{{ message }}</h2></p>
+    <ul>
+        {% for obj in names %}
+        <li>{{ obj.name }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
